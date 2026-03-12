@@ -1,0 +1,200 @@
+---
+description: Aprenda enquanto, faça-enquanto e para no Portugol.
+title: Estruturas de Repetição em Portugol
+---
+
+import Admonition from '@theme/Admonition';
+
+# Estruturas de Repetição em Portugol
+
+As **estruturas de repetição** permitem executar um bloco de código
+várias vezes.
+
+Em vez de escrever a mesma instrução várias vezes, usamos **laços de
+repetição**.
+
+<Admonition type="info" title="Por que usar repetição?">
+   Computadores conseguem executar milhares de repetições rapidamente. Laços permitem automatizar tarefas.
+</Admonition>
+
+------------------------------------------------------------------------
+
+# Tipos de Estruturas
+
+  Estrutura         Característica
+  ----------------- --------------------------------------------
+  enquanto          testa antes de executar
+  faca...enquanto   executa antes de testar
+  para              usado quando sabemos quantas vezes repetir
+
+------------------------------------------------------------------------
+
+# enquanto...faca
+
+Executa enquanto a condição for verdadeira.
+
+## Sintaxe
+
+``` portugol
+enquanto (condicao) faca
+{
+   // instruções
+}
+fimenquanto
+```
+
+## Exemplo
+
+``` portugol
+programa
+{
+ funcao inicio()
+ {
+   inteiro contador
+   contador = 1
+
+   enquanto (contador <= 5) faca
+   {
+      escreva(contador, "\n")
+      contador = contador + 1
+   }
+ }
+}
+```
+
+------------------------------------------------------------------------
+
+# faca...enquanto
+
+Executa o bloco **pelo menos uma vez**.
+
+## Sintaxe
+
+``` portugol
+faca
+{
+   // instruções
+} enquanto (condicao)
+```
+
+## Exemplo
+
+``` portugol
+programa
+{
+ funcao inicio()
+ {
+   inteiro opcao
+
+   faca
+   {
+      escreva("1 - Calcular\n")
+      escreva("2 - Listar\n")
+      escreva("0 - Sair\n")
+
+      leia(opcao)
+
+   } enquanto (opcao != 0)
+ }
+}
+```
+
+------------------------------------------------------------------------
+
+# para
+
+Usado quando sabemos o número de repetições.
+
+## Sintaxe
+
+``` portugol
+para (inicio; condicao; incremento) faca
+{
+   // instruções
+}
+fimpara
+```
+
+## Exemplo: Tabuada
+
+``` portugol
+programa
+{
+ funcao inicio()
+ {
+   inteiro i
+
+   para (i = 1; i <= 10; i++) faca
+   {
+      escreva("7 x ", i, " = ", 7*i, "\n")
+   }
+ }
+}
+```
+
+------------------------------------------------------------------------
+
+# Cadeias de Caracteres
+
+Uma **cadeia** representa texto.
+
+``` portugol
+cadeia nome
+nome = "Portugol"
+```
+
+Podemos acessar cada letra usando **índice**.
+
+``` portugol
+nome[0]
+nome[1]
+```
+
+------------------------------------------------------------------------
+
+# Vetores
+
+Um **vetor** guarda vários valores do mesmo tipo.
+
+``` portugol
+real notas[4]
+```
+
+## Exemplo
+
+``` portugol
+programa
+{
+ funcao inicio()
+ {
+   real nota[4]
+   real soma
+   inteiro i
+
+   soma = 0
+
+   para (i = 0; i < 4; i++) faca
+   {
+      leia(nota[i])
+      soma = soma + nota[i]
+   }
+
+   escreva("Media: ", soma / 4)
+ }
+}
+```
+
+------------------------------------------------------------------------
+
+# Resumo
+
+  Estrutura         Execução mínima
+  ----------------- -----------------
+  enquanto          0
+  faca...enquanto   1
+  para              0
+
+------------------------------------------------------------------------
+
+<Admonition type="tip" title="Pratique">Tente modificar os
+exemplos e executá‑los no Portugol WebStudio.</Admonition>
