@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkunitau_lpi_2026_01=globalThis.webpackChunkunitau_lpi_2026_01||[]).push([[742],{7093(u){u.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
