@@ -1,0 +1,219 @@
+---
+id: operadores-incremento-decremento
+title: Operadores de Incremento e Decremento
+sidebar_label: Incremento e Decremento
+sidebar_position: 1
+---
+
+import Admonition from '@theme/Admonition';
+
+# Operadores de Incremento e Decremento
+
+<Admonition type="info" title="Objetivo">
+Aprender como funcionam os operadores de incremento e decremento em Portugol.
+</Admonition>
+
+## Conceito
+
+Os operadores de incremento e decremento são utilizados para **aumentar ou diminuir o valor de uma variável em uma unidade**.
+
+- Incremento: aumenta o valor em 1
+- Decremento: diminui o valor em 1
+
+## Operador de Incremento
+
+```portugol
+inteiro numero = 10
+numero++
+escreva(numero)
+```
+
+Resultado esperado:
+
+```
+11
+```
+
+## Operador de Decremento
+
+```portugol
+inteiro numero = 10
+numero--
+escreva(numero)
+```
+
+Resultado esperado:
+
+```
+9
+```
+
+## Conteúdo do material
+
+Operadores de Incremento e 
+Decremento
+
+Portugol WebStudio — Universidade de Taubaté · Análise e Desenvolvimento de 
+
+Sistemas
+
+PROGRAMAÇÃO ESTRUTURADA
+
+PORTUGOL WEBSTUDIO
+
+O que veremos hoje?
+
+Nesta aula, vamos explorar operadores que simplificam e tornam o código mais elegante ao trabalhar com contadores, acumuladores e 
+
+atualizações de variáveis numéricas.
+
+01
+
+02
+
+Operador de Incremento ++
+
+Operador de Decremento --
+
+Aumentar o valor de uma variável em 1 unidade
+
+Diminuir o valor de uma variável em 1 unidade
+
+03
+
+04
+
+Atribuição Composta += e -=
+
+Outros Operadores Compostos *= e /=
+
+Atualizar variáveis somando ou subtraindo valores arbitrários
+
+Multiplicar e dividir com atribuição direta
+
+⚠ Atenção: repetição (loops) não é assunto desta aula — mas esses operadores serão muito usados na próxima!
+
+Por que incrementar e 
+decrementar?
+
+Em programação, é muito comum precisar contar ou acumular valores ao longo 
+
+da execução de um programa. Exemplos do cotidiano:
+
+ Carrinho de compras
+
+ Placar de jogo
+
+Cada produto adicionado 
+
+Cada acerto aumenta a pontuação 
+
+incrementa a quantidade total de 
+
+do jogador em um valor fixo.
+
+itens.
+
+ Estoque
+
+Cada venda realizada decrementa a quantidade disponível no estoque.
+
+Esses operadores evitam escrever x = x + 1 repetidamente, tornando o código mais 
+
+limpo e legível.
+
+Í
+(cid:16)
+q
+Operador de Incremento ++
+
+O operador ++ adiciona 1 unidade ao valor atual de uma variável inteira. É equivalente a escrever variavel = variavel + 1, porém de forma muito 
+
+mais concisa.
+
+Sintaxe
+
+variavel++
+
+Exemplo em Portugol
+
+inteiro contador = 0
+
+O operador é escrito após o nome da variável (pós-fixado).
+
+contador++
+
+escreva(contador)   // saída: 1
+
+contador++
+
+escreva(contador)   // saída: 2
+
+contador++
+
+escreva(contador)   // saída: 3
+
+💡 Pense no ++ como um atalho elegante. Cada vez que for executado, a variável cresce 1.
+
+Operador de Decremento --
+
+O operador -- subtrai 1 unidade do valor atual de uma variável. É o oposto do incremento e funciona de maneira simétrica.
+
+Sintaxe
+
+variavel--
+
+Exemplo em Portugol
+
+inteiro vidas = 3
+
+O operador é escrito após o nome da variável (pós-fixado).
+
+escreva(vidas)   // saída: 3
+
+vidas--
+
+escreva(vidas)   // saída: 2
+
+vidas--
+
+escreva(vidas)   // saída: 1
+
+🎮 Imagine um jogo onde o personagem perde uma vida a cada erro — o -- é exatamente isso!
+
+Comparando as três formas de incrementar
+
+Existem três maneiras equivalentes de incrementar uma variável em Portugol. Conhecer as diferenças ajuda a escolher a forma mais 
+
+adequada para cada situação.
+
+Forma Clássica
+
+Atribuição Composta
+
+Operador Unário
+
+x = x + 1
+
+x += 1
+
+x++
+
+Explícita e clara. Boa para iniciantes, mas 
+
+Intermediária. Compacta e ainda indica 
+
+Mais concisa. Ideal quando o incremento 
+
+verbosa quando usada muitas vezes.
+
+claramente o valor somado.
+
+é sempre de 1 unidade.
+
+Todas produzem o mesmo resultado. A escolha é uma questão de estilo e contexto.
+
+Atribuição Composta com 
+Soma +=
+
+O operador += soma um valor qualqu

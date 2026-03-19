@@ -1,0 +1,63 @@
+---
+title: Criando Funções
+sidebar_position: 2
+---
+
+# Criando Funções
+
+## Estrutura de uma função
+
+Uma função possui:
+
+1. Nome
+2. Parâmetros
+3. Tipo de retorno
+4. Corpo
+5. Retorno
+
+## Sintaxe básica
+
+```portugol
+funcao inteiro soma(inteiro a, inteiro b)
+{
+    retorne a + b
+}
+```
+
+## Função principal
+
+```portugol
+funcao inicio()
+{
+    inteiro resultado
+    resultado = soma(10, 5)
+    escreva(resultado)
+}
+```
+
+## Função sem retorno
+
+```portugol
+funcao vazio mensagem(cadeia nome)
+{
+    escreva("Olá ", nome)
+}
+```
+
+## Função com retorno
+
+```portugol
+funcao real media(real n1, real n2, real n3)
+{
+    retorne (n1 + n2 + n3) / 3
+}
+```
+
+## Parâmetros
+
+- Podem ser zero, um ou vários
+- Funcionam como variáveis locais
+
+## Escopo
+
+Variáveis dentro da função só existem dentro dela.
