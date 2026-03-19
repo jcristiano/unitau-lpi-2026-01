@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkunitau_lpi_2026_01=globalThis.webpackChunkunitau_lpi_2026_01||[]).push([[647],{7121(e,u,a){a.r(u),a.d(u,{default:()=>c});a(6540);var s=a(4164),r=a(7559),i=a(5500),l=a(2831),n=a(1656),t=a(4848);function c(e){return(0,t.jsx)(i.e3,{className:(0,s.A)(r.G.wrapper.docsPages),children:(0,t.jsx)(n.A,{children:(0,l.v)(e.route.routes)})})}}}]);
